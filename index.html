@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>cyc的简介</title>
+<meta charset="utf-8">
+<title>cyc的简介</title>
 <style>
 body 
 {
@@ -19,7 +19,7 @@ background-color:#e0ffff;
     margin-top:10%;
     text-align:center;
 }
-#p-a{
+#welcome{
     color:#00ff00;
     font-size:200%;
     margin-top:-5%;
@@ -30,8 +30,8 @@ background-color:#e0ffff;
     background-color: #4dbaff;
     border: none;
     color: white;
-    margin-top:10%;
     padding: 15px 32px;
+    margin-top:15%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -41,14 +41,32 @@ background-color:#e0ffff;
     padding-right: 0;
     width: 100%; 
 }
-
 </style>
 </head>
 <body>
-   <p id="title">欢迎来到cyc的主页</p>
-   <p id="p-a">Welcome to my homepage</p> 
-   <a href="https://xiaopacychen.github.io/cyc.github.io/sala.html"  target="_blank" id="button" >进入大厅</a>
+<p id="title">欢迎来到cyc的主页</p>
+<p onmouseover="welcome()" id="welcome">Welcome to my homepage</p> 
+<script>
+function welcome(){
+var sentence="";
+	var time=new Date().getHours();
+	if (time<12){
+		sentence="早上好";
+    }
+	else if(time<14){
+		sentence="中午好"
+	}
+	else if(time<18){
+		sentence="下午好"
+	}
+	else{
+		sentence="晚上好"
+	}
+		document.getElementById("welcome").innerHTML=sentence;
+}
+</script>
+   <p onload="sentence()"></p>
+   <a href="https://xiaopacychen.github.io/cyc.github.io/sala.html"  id="button" >进入大厅</a>
 
 </body>
 </html>
-
