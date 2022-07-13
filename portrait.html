@@ -3,39 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>头像</title>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #808080;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
-li {
-    float: left;
-    border-right:4px solid #0052cc;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 50px;
-  text-decoration: none;
-	background-image:url('https://xiaopacychen.github.io/cyc.github.io/logo-guides.svg');
-	background-size:25%;
-	background-repeat:no-repeat;
-	background-color: #3383ff;
-}
-
-li a:hover:not(.active) {
-	background-color: #00ff84;
-}
-</style>
 <style>
 div.img {
     margin: 5%;
@@ -68,7 +36,7 @@ background-color:#e0ffff;
     line-height:10%;
   }
 #p1{
-  margin-top:10%;
+  margin-top:5%;
   font-size:55px;
 
 }
@@ -77,12 +45,36 @@ background-color:#e0ffff;
 
 }
 </style>
+<style>
+.exitbutton{
+background-image:url("https://raw.githubusercontent.com/xiaopacychen/cyc.github.io/e649c0e833d641c54c6f7c681e7f44e3650aec5c/exit.svg");
+background-repeat:no-repeat;
+background-size:3%;
+display: inline-block;
+padding: 10px;
+font-size: 30px;
+cursor: pointer;
+text-align: center;   
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color:#33ffb8;
+border: none;
+border-radius: 15px;
+box-shadow:0 9px #999;
+width: 100%;
+}
+.exitbutton:hover{
+  background-color:#00ffa6;
+}
+.exitbutton:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
 </head>
 <body>
-<ul>
-  <li><a href="https://xiaopacychen.github.io/cyc.github.io/sala.html">主页</a></li>
-  <li><a href="https://xiaopacychen.github.io/cyc.github.io/">开始</a></li>
-</ul>
+
 
 <p class="texto" id="p1">这里是我用过的头像</p>
 <p class="texto" id="p2">如果你之前见过其中的一个，那么你可能"见过"我</p>
@@ -123,5 +115,8 @@ background-color:#e0ffff;
   </div>
 </div>
 
+<a href="https://xiaopacychen.github.io/cyc.github.io/sala.html">
+<button class="exitbutton">返回</button>
+</a>
   </body>
 </html>
