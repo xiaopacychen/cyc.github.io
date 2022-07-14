@@ -2,7 +2,7 @@
 <html lang="cn">
 <head>
 <meta charset="UTF-8">
-<title>名字</title>
+<title>昵称</title>
 
 <style>
 .exitbutton{
@@ -22,6 +22,7 @@ border: none;
 border-radius: 15px;
 box-shadow:0 9px #999;
 width: 100%;
+margin-top:100px;
 }
 .exitbutton:hover{
   background-color:#00ffa6;
@@ -32,11 +33,18 @@ width: 100%;
 }
 </style>
 <style>
-.p-o{
+.p-t{
   color:#33ffb8;
-  text-align:left;
   text-shadow:3px 3px #bfffe9;
-  line-height:10%;
+
+}
+.p-o{
+  font-size:30px;
+  text-align:center;
+	border-radius:10px;
+  width:100%;
+  background-repeat:no-repeat;
+  margin-top:10px;
 }
 #p1{
   font-size:80px;
@@ -45,10 +53,43 @@ width: 100%;
   text-decoration:overline;
   margin-top:0px;
 }
+#p2{
+  font-size:35px;
+  text-align:center;
+  margin-top:0px;
+}
+.t1{
+  border: 5px solid #33ffb8;
+  background-image:url('https://raw.githubusercontent.com/xiaopacychen/cyc.github.io/e649c0e833d641c54c6f7c681e7f44e3650aec5c/exit.svg');
+  background-size:50px;
+  color:#00aaff;
+}
+.t1:hover{
+  background-color:#33ffb8;
+  color:#ffffff;
+}
+.t2{
+  border: 5px solid #ff5c00;
+  background-image:url('https://raw.githubusercontent.com/xiaopacychen/cyc.github.io/ab8c85870af6ce210dcc729fdecb93899c08bc64/logo-redguides.svg');
+  background-size:50px;
+  color:#ff334b;
+}
+.t2:hover{
+  background-color:#ff5c00;
+  color:#ffffff;
+}
 </style>
 </head>
 <body>
 <p id="p1">昵称</p>
+<p class="p-t" id="p2">这里是我的所有用过的昵称，所以如果看到过这个昵称，你一定看到过我</p>
+<div class="p-o t2">cyc</div>
+<div class="p-o t2">cychen</div>
+<div class="p-o t1">晓帕cyc</div>
+<div class="p-o t1">晓帕cychen</div>
+<div class="p-o t2">狗头cyc</div>
+<div class="p-o t1">狗头cychen</div>
+<div class="p-o t1">晓帕</div>
 <a href="https://xiaopacychen.github.io/cyc.github.io/sala.html">
 <button class="exitbutton">返回</button>
 </a>
