@@ -18,11 +18,18 @@ body
 a{
   text-decoration:none;
 }
+.text-o{
+  color:#66b8ff;
+  }
+
 </style>
 <style>
-.text-o{
-    color:#66b8ff;
-  }
+.shortcut{
+  margin-top:2%;
+}
+.head{
+  margin-top:0px;
+}
 </style>
 <style>
 .title{
@@ -111,24 +118,22 @@ a{
 </style>
 <style>
 .shortcut-box{
-  border: 4px solid #004466;
+  border: 4px solid #00ffa6;
 	border-radius:10px;
   width:45%;
-  height:40px;
-  background-repeat:no-repeat;
-  background-size:7%;
-  background-image:url("https://xiaopacychen.github.io/cyc.github.io/logo.svg");
+  height:30px;
+  margin-left:10px;
+  margin-top:5px;
+  float: left;
 }
 .shortcut-box:hover{
   border: 4px solid #fff;
   background-color:#fff;
-}
-.shortcut-right{
-  margin-left:50%;
+  opacity:0.5;
 }
 .shortcut-text{
   text-align:center;
-  font-size:25px;
+  font-size:20px;
   margin-top:0px;
   word-wrap:break-word;
   color:#0079ff;
@@ -136,16 +141,34 @@ a{
 </style>
 <style>
 .shortcut-kind{
-  border-left:  6px solid #ff5c00;
-  font-size:25%;
-  margin-top:2%;
+  margin-top:10%;
+  border-left: 5px solid #00aaff;
+}
+.shortcut-kind:hover{
+  border-left: 5px solid #00ff4f;
 }
 .shortcut-title{
-  font-size:50px;
+  font-size:25px;
+  float:center;
+  text-indent:1%;
+}
+</style>
+<style>
+#salapicture-a-box{
+  float: center;
+  background-image:url("https://raw.githubusercontent.com/xiaopacychen/cyc.github.io/main/salapicture-a.png");
+  background-repeat:no-repeat;
+  background-size:10%;
+  height:5000px;
+  margin-top:20%;
+  margin-left:0px;
+
 }
 </style>
 </head>
 <body>
+
+<div id="head">
 
 <div class="portraitframe">
 <a href="https://xiaopacychen.github.io/cyc.github.io/portrait.html">
@@ -169,6 +192,10 @@ cyc
 <p id="colourfulegg">了解cyc的各种八卦</p>
 </div>
 </a>
+
+</div>
+
+<div id="shortcut">
 
 <div class="shortcut-kind">
 <p class="shortcut-title">宝藏网站</p>
@@ -194,7 +221,6 @@ cyc
 </a>
 
 </div>
-
 <div class="shortcut-kind">
 <p class="shortcut-title">Minecraft</p>
 <a href="https://www.chunkbase.com/apps/">
@@ -218,16 +244,20 @@ cyc
 </div>
 </a>
 </div>
-
 <div class="shortcut-kind">
-<p class="shortcut-title">HTML</p>
+<p class="shortcut-title">网站</p>
 <a href="https://lightly.teamcode.com/login">
 <div class="shortcut-box">
-<p class="shortcut-text" >lightly</p>
+<p class="shortcut-text" >lightly|前端在线编辑器</p>
+</div>
+</a>
+
+<a href="https://www.freenom.com/zh/index.html?lang=zh">
+<div class="shortcut-box">
+<p class="shortcut-text" >Freenom|白薅域名</p>
 </div>
 </a>
 </div>
-
 <div class="shortcut-kind">
 <p class="shortcut-title">Scratch</p>
 <a href="https://turbowarp.org/">
@@ -236,7 +266,7 @@ cyc
 </div>
 </a>
 <a href="https://gitblock.cn/Projects/512945">
-<div class="shortcut-box shortcut-right">
+<div class="shortcut-box">
 <p class="shortcut-text " >SJA</p>
 </div>
 </a>
@@ -246,6 +276,13 @@ cyc
 </div>
 </a>
 </div>
+
+</div>
+
+<div id="salapicture-a-box">
+</div>
+
+
 
 </body>
 </html>
