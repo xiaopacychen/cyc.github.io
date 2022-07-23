@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="UTF-8">
+<title>Lightly-HTML-Project</title>
+<style>
+#import{
+    border: 3px solid #33ffb8;
+	border-radius:10px;
+    width: 100%;
+    height: 30px;
+    float: center;
+    margin-left: 0px;
+    font-size: 15px;
+    background-color: #fff;
+    margin-top: 5%;
+}
+#solution{
+    text-align: center;
+    font-size: 25px;
+    color: #003350;
+    margin-top: 5%;
+}
+.button {
+  border-radius: 5px;
+  background-color: #33ffb8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 100%;
+  height: 10%;
+  cursor: pointer;
+  transition: all 0.5s;
+  float: bottom;
+  margin-top: 2%;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '＞';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<style>
+#bon-box{
+  background-color:#003350;
+  height:80px;
+  width: 105%;
+  float: bottom;
+  margin-left: -5%;
+  margin-right: 0px;
+  margin-bottom: -10px;
+  margin-top:50%;
+  line-height:70%
+}
+.bon-p{
+  font-size: 100%;
+  text-align: center;
+  float: center;
+  color: #fff;
+}
+a:link {color:#000000;text-decoration:none;}     
+a:visited {color:#000000;text-decoration:none;} 
+a:hover {color:#000000;text-decoration:none;}  
+a:active {color:#00aaff;text-decoration:none;} 
+</style>
+<script>
+function jr(){
+    var imt;
+    imt=document.getElementById("import").value;
+    document.getElementById("solution").innerHTML=eval(imt);
+    
+    /*我tm还有eval函数这种东西，尼玛废了我n天的时间编计算器，c*/
+    /*var get=[12,24,48];
+    var minus='f';
+    var bool='f';
+    document.write(imt.length+'<br>')
+    document.write(imt+'<br>')
+    var dz1=0
+    for(dz1=1;dz1<imt.length;dz1++){
+        document.write('<br>'+dz1+'_____________________')
+        var bool=det(imt.slice(dz1-1,dz1))
+        document.write(imt.slice(dz1-1,dz1)+',')
+        document.write(bool+',')
+        if(bool='t'||minus=='t'){
+            ls1=get.slice(-1);
+            ls1=ls1[0].toString().slice(-1)
+            document.write(ls1+',')
+            var bool=det(ls1)
+            if(bool=='t'||minus=='t')    {
+                ls2=get.slice(-1)
+                get.pop()
+
+                document.write(get.slice(-1)+',')
+
+            }        
+       }
+    }*/
+}
+</script>
+</head>
+<body>
+<p id="solution">[未计算]</p>
+<input type="text" id="import" value="((5+5)*10*2009-900)*100.455025" maxlength="1000" size='100' placeholder=输入算式>
+<button onclick="jr()" class='button' style="vertical-align:middle"><span>运算</span></button>
+
+<div id="bon-box">
+<br>
+<p class="bon-p">由<a href="https://github.com/" class='a-t'>Github</a>程序托管</p>
+</div>
+
+</body>
+</html>
