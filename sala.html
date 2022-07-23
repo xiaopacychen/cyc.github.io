@@ -20,20 +20,25 @@ a:link {color:#000000;text-decoration:none;}
 a:visited {color:#000000;text-decoration:none;} 
 a:hover {color:#000000;text-decoration:none;}  
 a:active {color:#00aaff;text-decoration:none;} 
+a{target="_blank";}
+.a-t{target="_blank";}
 
 p{
   color:#00aaff;
 }
+
 </style>
 <style>
 .shortcut{
-  margin-top:2%;
+  margin-top:0px;
 }
 .head{
   margin-top:0px;
 }
+.fgx{
+  border-bottom: 2px solid #003350;
+}
 </style>
-
 <style>
 .portraitframe{
 	padding:25px; 
@@ -113,11 +118,11 @@ p{
 .shortcut-box{
   border: 4px solid #00ffa6;
 	border-radius:10px;
-  width:45%;
+  width:90%;
   height:30px;
   margin-left:10px;
   margin-top:5px;
-  float: left;
+  float: justify;
 }
 .shortcut-box:hover{
   border: 4px solid #fff;
@@ -134,7 +139,7 @@ p{
 </style>
 <style>
 .shortcut-kind{
-  margin-top:10%;
+  margin-top:5%;
   border-left: 5px solid #00aaff;
 }
 .shortcut-kind:hover{
@@ -151,14 +156,7 @@ p{
 #iduce-box{
   float: center;
   width:100%;
-  margin-top:20%;
-  border-bottom: 2px solid #00ffa6;
-}
-#iduce-t{
-  font-size:400%;
-  border-left: 10px solid #00aaff;
-  margin-left:10px;
-  color:#003350;
+  margin-top:2%;
 }
 .iduce-p{
   font-size: 200%;
@@ -181,17 +179,64 @@ p{
   margin-left: -5%;
   margin-right: 0px;
   margin-bottom: -10px;
-  margin-top: 5%;
+  margin-top:5%;
   line-height:70%
 }
 .bon-p{
   font-size: 100%;
   text-align: center;
+  float: center;
   color: #fff;
 }
 .bon-p1{
 
 }
+</style>
+<style>
+#gj-t{
+  font-size:30px;
+  float:center;
+  text-indent:1%;
+  color:#003350;
+}
+#gj-box{
+  border-left: #00ffa6 solid 5px;
+}
+#gj-box:hover{
+  border-left: #003350 solid 5px;
+}
+.gj-pict{
+  border:#00aaff solid 3px;
+  border-radius: 5px;
+  height: 50px;
+  width:50px;
+  float: justify;
+  margin-left: 2%;
+  margin-top: 2%;
+  
+}
+.gj-pict:hover{
+  animation:gj-pict 2s;
+  animation-iteration-count:100;
+  animation-direction:alternate;
+  background-color: #00aaff;
+
+}
+.gj-text{
+  font-size: 45px;
+  margin-top: -10px;
+  text-align: center;
+  color: #003350;
+}
+@keyframes gj-pict{
+  0%{background-color: #00aaff;}
+  25%{transform:rotate(0deg);}
+  37%{transform:rotate(-15deg)}
+  49%{transform:rotate(15deg)}
+  75%{transform:rotate(0deg)}
+  100%{background-color: #00ffa6;}
+}
+
 </style>
 </head>
 <body>
@@ -225,10 +270,17 @@ cyc
 
 </div>
 
-<div id="shortcut" >
+<div id="iduce-box" class='fgx'>
+<p class="iduce-p">此乃一只12岁的高级灵长类碳基生物的领地，非友好访问者请勿靠经，以防伤人。你可以叫我<a href="https://xiaopacychen.github.io/cyc.github.io/name.html">cyc、cychen</a>。喜欢编程，会Scratch、HTML，一些CSS，一点JS、Py和C#。谁能教一下C#或者JS啊awa（不会后端的屑。</p>
+<p class="iduce-p">数学不错，语文英语一般。体育常年位居班级前三<del>，虽然几乎不运动但就是好。</del>美术音乐...<del>不记得了，几乎没管。</del></p>
+<p class="iduce-p"></p>
+<p class="iduce-p" id="iduce-wait">待更新...</p>
+</div>
+
+<div id="shortcut" class='fgx'>
 
 <div class="shortcut-kind">
-<p class="shortcut-title">宝藏网站</p>
+<p class="shortcut-title">常用</p>
 <a href="https://www.topdodo.com/mohu">
 <div class="shortcut-box">
 <p class="shortcut-text" >在线图片处理|素材处理</p>
@@ -275,7 +327,7 @@ cyc
 </a>
 </div>
 <div class="shortcut-kind">
-<p class="shortcut-title">网站</p>
+<p class="shortcut-title">html</p>
 <a href="https://lightly.teamcode.com/login">
 <div class="shortcut-box">
 <p class="shortcut-text" >lightly|前端在线编辑器</p>
@@ -309,18 +361,15 @@ cyc
 
 </div>
 
-<div id="iduce-box">
-<p id="iduce-t">文字简介</p>
-<p class="iduce-p">一只12岁的初一boy，现居广东广州，<a href="https://xiaopacychen.github.io/cyc.github.io/name.html">cyc</a>乃吾之网名。喜欢编程，会Scratch、HTML，一些CSS，一点JS、Py和C#。谁能教一下C#或者JS啊awa（一个不会后端的屑</p>
-<p class="iduce-p">数学不错，语文英语一般。体育常年位居班级前三<del>，虽然几乎不运动但就是好。</del>美术音乐...<del>不记得了，几乎没管。</del></p>
-<p class="iduce-p"></p>
-<p class="iduce-p" id="iduce-wait">待更新...</p>
+<div id='gj-box'>
+<p id='gj-t'>工具</p>
+<a href="" class='a-t'><div class='gj-pict'><p class='gj-text'>=</p></div></a>
 </div>
 
 <div id="bon-box">
 <br>
-<p class="bon-p">由<a href="https://github.com/">Github</a>程序托管</p>
-<p class="bon-p" id="bon-p1">最近一次更新于2022，7，21</p>
+<p class="bon-p">由<a href="https://github.com/" class='a-t'>Github</a>程序托管</p>
+<p class="bon-p" id="bon-p1">最近一次更新于2022，7，23</p>
 </div>
 
 </body>
